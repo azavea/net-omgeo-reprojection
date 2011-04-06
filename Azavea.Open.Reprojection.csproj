@@ -94,7 +94,7 @@ copy /Y "$(ProjectDir)\lib\projnet\*.txt" "$(TargetDir)"
 echo Copying log4net license file...
 copy /Y "$(ProjectDir)\..\Azavea.Open.Common\lib\log4net\*.txt" "$(TargetDir)"
 echo Copying nunit license file...
-copy /Y "$(ProjectDir)\..\Azavea.Open.Common\lib\nunit\*.html" "$(TargetDir)"
+copy /Y "$(ProjectDir)\..\Azavea.Open.Common\lib\nunit\*.TXT" "$(TargetDir)"
 </PostBuildEvent>
   </PropertyGroup>
 </Project>
