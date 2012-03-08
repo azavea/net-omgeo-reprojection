@@ -24,7 +24,7 @@
 using System;
 using GeoAPI.CoordinateSystems;
 using NUnit.Framework;
-using GisSharpBlog.NetTopologySuite.Geometries;
+using NetTopologySuite.Geometries;
 
 namespace Azavea.Open.Reprojection.Tests
 {
