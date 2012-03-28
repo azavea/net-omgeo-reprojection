@@ -1,3 +1,4 @@
+extern alias newGeoAPI;
 // Copyright (c) 2004-2010 Azavea, Inc.
 // 
 // Permission is hereby granted, free of charge, to any person
@@ -22,9 +23,9 @@
 // OTHER DEALINGS IN THE SOFTWARE.
 
 using System;
-using GeoAPI.CoordinateSystems;
-using GeoAPI.CoordinateSystems.Transformations;
-using GeoAPI.Geometries;
+using newGeoAPI::GeoAPI.CoordinateSystems;
+using newGeoAPI::GeoAPI.CoordinateSystems.Transformations;
+using newGeoAPI::GeoAPI.Geometries;
 using NetTopologySuite.Geometries;
 using ProjNet.CoordinateSystems.Transformations;
 using System.Collections.Generic;

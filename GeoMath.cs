@@ -1,3 +1,4 @@
+extern alias newGeoAPI;
 ﻿// Copyright (c) 2004-2010 Azavea, Inc.
 // 
 // Permission is hereby granted, free of charge, to any person
@@ -22,7 +23,7 @@
 // OTHER DEALINGS IN THE SOFTWARE.
 
 using System;
-using GeoAPI.Geometries;
+using newGeoAPI::GeoAPI.Geometries;
 
 namespace Azavea.Open.Reprojection
 {
