@@ -25,7 +25,7 @@ extern alias newGeoAPI;
 using System;
 using newGeoAPI::GeoAPI.CoordinateSystems;
 using NUnit.Framework;
-using NetTopologySuite.Geometries;
+using GisSharpBlog.NetTopologySuite.Geometries;
 
 namespace Azavea.Open.Reprojection.Tests
 {

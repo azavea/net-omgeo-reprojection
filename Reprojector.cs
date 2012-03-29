@@ -1,4 +1,3 @@
-extern alias newGeoAPI;
 // Copyright (c) 2004-2010 Azavea, Inc.
 // 
 // Permission is hereby granted, free of charge, to any person
@@ -23,11 +22,11 @@ extern alias newGeoAPI;
 // OTHER DEALINGS IN THE SOFTWARE.
 
 using System;
-using newGeoAPI::GeoAPI.CoordinateSystems;
-using newGeoAPI::GeoAPI.CoordinateSystems.Transformations;
-using newGeoAPI::GeoAPI.Geometries;
-using NetTopologySuite.Geometries;
-using ProjNet.CoordinateSystems.Transformations;
+using GeoAPI.CoordinateSystems;
+using GeoAPI.CoordinateSystems.Transformations;
+using GeoAPI.Geometries;
+using GisSharpBlog.NetTopologySuite.Geometries;
+using SharpMap.CoordinateSystems.Transformations;
 using System.Collections.Generic;
 
 namespace Azavea.Open.Reprojection
@@ -57,21 +56,21 @@ namespace Azavea.Open.Reprojection
         /// <summary>
         /// Coordinate system for Pennsylvania State Plane South.
         /// </summary>
-        public static readonly ICoordinateSystem PAStatePlane = ProjNet.Converters.WellKnownText.CoordinateSystemWktReader.Parse(PAStatePlane_WKT) as ICoordinateSystem;
+        public static readonly ICoordinateSystem PAStatePlane = SharpMap.Converters.WellKnownText.CoordinateSystemWktReader.Parse(PAStatePlane_WKT) as ICoordinateSystem;
         /// <summary>
         /// Coordinate system for WGS84 (most common lat/lon projection).
         /// </summary>
-        public static readonly ICoordinateSystem WGS84 = ProjNet.Converters.WellKnownText.CoordinateSystemWktReader.Parse(WGS84_WKT) as ICoordinateSystem;
+        public static readonly ICoordinateSystem WGS84 = SharpMap.Converters.WellKnownText.CoordinateSystemWktReader.Parse(WGS84_WKT) as ICoordinateSystem;
         /// <summary>
         /// Coordinate system for New Zealand?.
         /// </summary>
-        public static readonly ICoordinateSystem NZGD2000 = ProjNet.Converters.WellKnownText.CoordinateSystemWktReader.Parse(NZGD_2000) as ICoordinateSystem;
+        public static readonly ICoordinateSystem NZGD2000 = SharpMap.Converters.WellKnownText.CoordinateSystemWktReader.Parse(NZGD_2000) as ICoordinateSystem;
         
         /// <summary>
         /// Coordinate system for Web Mercator.  This is not well defined, and needs a hack in the reprojector, but
         /// we still want to have the CoordinateSystem around nominally, so it can be used in the standard way.
         /// </summary>
-        public static readonly ICoordinateSystem WebMercator = ProjNet.Converters.WellKnownText.CoordinateSystemWktReader.Parse(BROKEN_WEB_MERCATOR_WKT) as ICoordinateSystem;
+        public static readonly ICoordinateSystem WebMercator = SharpMap.Converters.WellKnownText.CoordinateSystemWktReader.Parse(BROKEN_WEB_MERCATOR_WKT) as ICoordinateSystem;
 
         /// <summary>
         /// Given a pair of coordinate systems, projects a point from one to another.
