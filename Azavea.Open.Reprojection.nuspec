@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+  <id>$id$</id>
+  <version>$version$</version>
+  <title>$title$</title>
+  <authors>$author$</authors>
+  <owners>$author$</owners>
+  <requireLicenseAcceptance>false</requireLicenseAcceptance>
+  <description>$description$</description>
+  <releaseNotes>Package for NuGet</releaseNotes>
+  <copyright>Copyright © Azavea 2013</copyright>
+  <dependencies>
+    <dependency id="Azavea.Open.Common" version="2.1.8" />
+  </dependencies>  
+  </metadata>
+  <files/>
+</package>
